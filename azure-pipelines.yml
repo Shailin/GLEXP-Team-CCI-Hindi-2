@@ -25,6 +25,7 @@ steps:
 
  - task: CopyFiles@2
    inputs:
+    SourceFolder: 'platforms/android/app'
     contents: '**/*.apk'
     targetFolder: '$(build.artifactStagingDirectory)'
 
