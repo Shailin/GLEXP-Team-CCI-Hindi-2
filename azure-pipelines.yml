@@ -11,13 +11,13 @@ pool:
 
 steps:
  - script: gradle wrapper
-   workingDirectory: platforms/android
+   workingDirectory: 'platforms/android'
    displayName: 'Build task'
 
  - task: Gradle@2
    inputs:
-    workingDirectory: platforms/android
-    gradleWrapperFile: 'gradlew'
+    workingDirectory: 'platforms/android'
+    gradleWrapperFile: 'platforms/android/gradlew'
     gradleOptions: '-Xmx3072m'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
