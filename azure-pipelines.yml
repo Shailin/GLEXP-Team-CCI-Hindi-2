@@ -11,6 +11,8 @@ pool:
 
 steps:
  - script: gradle wrapper
+   workingDirectory: platforms/android
+   displayName: 'Build task'
 
 # pool:
 #   vmImage: 'macos-latest'
